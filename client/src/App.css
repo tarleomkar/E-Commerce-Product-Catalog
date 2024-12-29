@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Center the product list and add linear gradient background */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+  align-items: center;    
+  min-height: 100vh;      
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); 
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
   text-align: center;
+  width: 200px;
+  background-color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.product-card:hover {
+  transform: scale(1.05); 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.product-card h3 {
+  font-size: 18px;
+  color: #333; 
 }
 
-.card {
-  padding: 2em;
+.product-card p {
+  font-size: 14px;
+  color: #555; 
 }
 
-.read-the-docs {
-  color: #888;
+
+.product-card button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.product-card button:hover {
+  background-color: #218838; 
+  transform: translateY(-2px);
+}
+
+.cart-info {
+  margin: 20px 0;
+  text-align: center; 
+}
+
+.cart-info h3 {
+  font-size: 18px;
+  color: #333;
 }

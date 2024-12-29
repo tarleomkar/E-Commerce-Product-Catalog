@@ -1,0 +1,8 @@
+# Node.js
+node_modules/
+
+# Vite build folder
+client/dist/
+
+# Environment files
+.env

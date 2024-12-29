@@ -13,12 +13,13 @@ const Home = () => {
   const fetchProducts = async () => {
     try {
       const queryParams = [];
-      if (category) queryParams.push(`category=${category}`);
+      if (category) queryParams.push(`category=${category.toLowerCase()}`); // Normalize category
       if (sortOrder) queryParams.push(`sort=${sortOrder}`);
       const queryString = queryParams.length ? `?${queryParams.join("&")}` : "";
-      const response = await fetch(
-        `http://localhost:5000/api/products/filter${queryString}`
-      );
+
+      console.log("Fetching products with query:", queryString); // Debugging query string
+
+      const response = await fetch(`http://localhost:5000/api/products/filter${queryString}`);
       const data = await response.json();
       setProducts(data);
     } catch (error) {
@@ -86,9 +87,9 @@ const Home = () => {
                 onChange={(e) => setCategory(e.target.value)}
               >
                 <option value="">All</option>
-                <option value="Shoes">Shoes</option>
-                <option value="Electronics">Electronics</option>
-                <option value="Clothes">Clothes</option>
+                <option value="shoes">Shoes</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothes</option>
               </select>
             </label>
 
@@ -118,13 +119,17 @@ const Home = () => {
         </div>
 
         <div className="products">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              addToCart={addToCart} // Passing addToCart function to ProductCard
-            />
-          ))}
+          {products.length > 0 ? (
+            products.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                addToCart={addToCart} // Passing addToCart function to ProductCard
+              />
+            ))
+          ) : (
+            <p>No products found</p>
+          )}
         </div>
       </div>
 

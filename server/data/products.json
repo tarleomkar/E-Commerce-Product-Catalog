@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "title": "Smartphone A1",
+      "price": 299,
+      "image": "images/product1.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": 2,
+      "title": "Running Shoes X",
+      "price": 80,
+      "image": "images/product 2.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 3,
+      "title": "Laptop Pro",
+      "price": 999,
+      "image": "images/product 3.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": 4,
+      "title": "Casual Shirt",
+      "price": 25,
+      "image": "images/product 4.jpg",
+      "category": "clothing"
+    },
+    {
+      "id": 5,
+      "title": "Wireless Earbuds",
+      "price": 50,
+      "image": "images/product 5.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": 6,
+      "title": "Sneakers Z2",
+      "price": 70,
+      "image": "images/product 6.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 7,
+      "title": "Winter Jacket",
+      "price": 120,
+      "image": "images/product 7.jpg",
+      "category": "clothing"
+    },
+    {
+      "id": 8,
+      "title": "Gaming Console",
+      "price": 399,
+      "image": "images/product 8.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": 9,
+      "title": "Formal Shoes",
+      "price": 95,
+      "image": "images/product 9.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 10,
+      "title": "Fitness Tracker",
+      "price": 45,
+      "image": "images/product 10.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": 11,
+      "title": "Denim Jeans",
+      "price": 40,
+      "image": "images/product 11.jpg",
+      "category": "clothing"
+    },
+    {
+      "id": 12,
+      "title": "4K Smart TV",
+      "price": 699,
+      "image": "images/product 12.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": 13,
+      "title": "Leather Belt",
+      "price": 20,
+      "image": "images/product 13.jpg",
+      "category": "clothing"
+    },
+    {
+      "id": 14,
+      "title": "Hiking Boots",
+      "price": 110,
+      "image": "images/product 14.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 15,
+      "title": "Wireless Keyboard",
+      "price": 60,
+      "image": "images/product 15.jpg",
+      "category": "electronics"
+    }
+  ]
+  

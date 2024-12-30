@@ -32,6 +32,9 @@ const Home = () => {
     fetchProducts();
   }, [category, sortOrder]);
 
+  console.log(products);
+  
+
   // Add product to cart
   const addToCart = (product) => {
     setCart((prevCart) => {

@@ -1,6 +1,11 @@
 import React from "react";
 
-const CartDisplay = ({ cart, increaseQuantity, decreaseQuantity, removeFromCart }) => {
+const CartDisplay = ({
+  cart,
+  increaseQuantity,
+  decreaseQuantity,
+  removeFromCart,
+}) => {
   const calculateTotalPrice = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   };
@@ -15,7 +20,10 @@ const CartDisplay = ({ cart, increaseQuantity, decreaseQuantity, removeFromCart 
           <ul>
             {cart.map((item) => (
               <li key={item.id} className="cart-item">
-                <img src={`http://localhost:5000/images/${item.image}`} alt={item.title} />
+                <img
+                  src={`http://localhost:5000/images/${item.image}`}
+                  alt={item.title}
+                />
                 <div className="cart-item-info">
                   <h3>{item.title}</h3>
                   <p>Price: ${item.price}</p>
@@ -26,7 +34,9 @@ const CartDisplay = ({ cart, increaseQuantity, decreaseQuantity, removeFromCart 
                     <button onClick={() => increaseQuantity(item.id)}>+</button>
                   </div>
                   <p>Total: ${item.price * item.quantity}</p>
-                  <button onClick={() => removeFromCart(item.id)}>Remove</button>
+                  <button className="quantity-controls-remove" onClick={() => removeFromCart(item.id)}>
+                    Remove
+                  </button>
                 </div>
               </li>
             ))}

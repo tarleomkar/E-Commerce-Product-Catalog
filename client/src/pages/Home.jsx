@@ -32,7 +32,7 @@ const Home = () => {
     fetchProducts();
   }, [category, sortOrder]);
 
-  console.log(products);
+  // console.log(products);
   
 
   // Add product to cart

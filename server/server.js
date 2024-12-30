@@ -16,7 +16,7 @@ app.use("/api/cart", cartRoutes);
 
 // MongoDB Atlas connection
 mongoose
-  .connect("mongodb://localhost:27017/ecommerce")
+  .connect("mongodb://localhost:27017/ecommerce")  // Ensure you are connecting to the right MongoDB instance
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("MongoDB connection error:", err));
 

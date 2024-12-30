@@ -18,8 +18,10 @@ const CartDisplay = ({
       ) : (
         <div>
           <ul>
-            {cart.map((item) => (
-              <li key={item.id} className="cart-item">
+            {cart.map((item, index) => (
+              <li key={item.id || index} className="cart-item">
+                {" "}
+                {/* Use item.id or fallback to index */}
                 <img
                   src={`http://localhost:5000/images/${item.image}`}
                   alt={item.title}
@@ -34,13 +36,17 @@ const CartDisplay = ({
                     <button onClick={() => increaseQuantity(item.id)}>+</button>
                   </div>
                   <p>Total: ${item.price * item.quantity}</p>
-                  <button className="quantity-controls-remove" onClick={() => removeFromCart(item.id)}>
+                  <button
+                    className="quantity-controls-remove"
+                    onClick={() => removeFromCart(item.id)}
+                  >
                     Remove
                   </button>
                 </div>
               </li>
             ))}
           </ul>
+
           <div className="total">
             <h3>Total Price: ${calculateTotalPrice()}</h3>
           </div>

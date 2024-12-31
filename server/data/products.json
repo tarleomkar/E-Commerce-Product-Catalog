@@ -1,108 +1,92 @@
 [
-    {
-      "id": 1,
-      "title": "Smartphone A1",
-      "price": 299,
-      "image": "/product_1.jpg",
-      "category": "electronics"
-    },
-    {
-      "id": 2,
-      "title": "Running Shoes X",
-      "price": 80,
-      "image": "/product_2.jpg",
-      "category": "shoes"
-    },
-    {
-      "id": 3,
-      "title": "Laptop Pro",
-      "price": 999,
-      "image": "/product_3.jpg",
-      "category": "electronics"
-    },
-    {
-      "id": 4,
-      "title": "Casual Shirt",
-      "price": 25,
-      "image": "/product_4.jpg",
-      "category": "clothing"
-    },
-    {
-      "id": 5,
-      "title": "Wireless Earbuds",
-      "price": 50,
-      "image": "/product_5.jpg",
-      "category": "electronics"
-    },
-    {
-      "id": 6,
-      "title": "Sneakers Z2",
-      "price": 70,
-      "image": "/product_6.jpg",
-      "category": "shoes"
-    },
-    {
-      "id": 7,
-      "title": "Winter Jacket",
-      "price": 120,
-      "image": "/product_7.jpg",
-      "category": "clothing"
-    },
-    {
-      "id": 8,
-      "title": "Gaming Console",
-      "price": 399,
-      "image": "/product_8.jpg",
-      "category": "electronics"
-    },
-    {
-      "id": 9,
-      "title": "Formal Shoes",
-      "price": 95,
-      "image": "/product_9.jpg",
-      "category": "shoes"
-    },
-    {
-      "id": 10,
-      "title": "Fitness Tracker",
-      "price": 45,
-      "image": "/product_10.jpg",
-      "category": "electronics"
-    },
-    {
-      "id": 11,
-      "title": "Denim Jeans",
-      "price": 40,
-      "image": "/product_11.jpg",
-      "category": "clothing"
-    },
-    {
-      "id": 12,
-      "title": "4K Smart TV",
-      "price": 699,
-      "image": "/product_12.jpg",
-      "category": "electronics"
-    },
-    {
-      "id": 13,
-      "title": "Leather Belt",
-      "price": 20,
-      "image": "/product_13.jpg",
-      "category": "clothing"
-    },
-    {
-      "id": 14,
-      "title": "Hiking Boots",
-      "price": 110,
-      "image": "/product_14.jpg",
-      "category": "shoes"
-    },
-    {
-      "id": 15,
-      "title": "Wireless Keyboard",
-      "price": 60,
-      "image": "/product_15.jpg",
-      "category": "electronics"
-    }
-  ]
-  
+  {
+    "title": "Smartphone A1",
+    "price": 299,
+    "image": "/product_1.jpg",
+    "category": "electronics"
+  },
+  {
+    "title": "Running Shoes X",
+    "price": 80,
+    "image": "/product_2.jpg",
+    "category": "shoes"
+  },
+  {
+    "title": "Laptop Pro",
+    "price": 999,
+    "image": "/product_3.jpg",
+    "category": "electronics"
+  },
+  {
+    "title": "Casual Shirt",
+    "price": 25,
+    "image": "/product_4.jpg",
+    "category": "clothing"
+  },
+  {
+    "title": "Wireless Earbuds",
+    "price": 50,
+    "image": "/product_5.jpg",
+    "category": "electronics"
+  },
+  {
+    "title": "Sneakers Z2",
+    "price": 70,
+    "image": "/product_6.jpg",
+    "category": "shoes"
+  },
+  {
+    "title": "Winter Jacket",
+    "price": 120,
+    "image": "/product_7.jpg",
+    "category": "clothing"
+  },
+  {
+    "title": "Gaming Console",
+    "price": 399,
+    "image": "/product_8.jpg",
+    "category": "electronics"
+  },
+  {
+    "title": "Formal Shoes",
+    "price": 95,
+    "image": "/product_9.jpg",
+    "category": "shoes"
+  },
+  {
+    "title": "Fitness Tracker",
+    "price": 45,
+    "image": "/product_10.jpg",
+    "category": "electronics"
+  },
+  {
+    "title": "Denim Jeans",
+    "price": 40,
+    "image": "/product_11.jpg",
+    "category": "clothing"
+  },
+  {
+    "title": "4K Smart TV",
+    "price": 699,
+    "image": "/product_12.jpg",
+    "category": "electronics"
+  },
+  {
+    "title": "Leather Belt",
+    "price": 20,
+    "image": "/product_13.jpg",
+    "category": "clothing"
+  },
+  {
+    "title": "Hiking Boots",
+    "price": 110,
+    "image": "/product_14.jpg",
+    "category": "shoes"
+  },
+  {
+    "title": "Wireless Keyboard",
+    "price": 60,
+    "image": "/product_15.jpg",
+    "category": "electronics"
+  }
+]

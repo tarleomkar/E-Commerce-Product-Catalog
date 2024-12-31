@@ -1,2 +1,2 @@
 # E-Commerce-Product-Catalog
-This is assignment is assgined by Weoto technolgies.
+This is assignment is assigned by Weoto technolgies.

@@ -18,10 +18,10 @@ const CartDisplay = ({
       ) : (
         <div>
           <ul>
-            {cart.map((item, index) => (
-              <li key={item.id || index} className="cart-item">
+            {cart.map((item) => (
+              <li key={item.id} className="cart-item">
                 {" "}
-                {/* Use item.id or fallback to index */}
+                {/* Ensure a unique key */}
                 <img
                   src={`http://localhost:5000/images/${item.image}`}
                   alt={item.title}
@@ -36,10 +36,7 @@ const CartDisplay = ({
                     <button onClick={() => increaseQuantity(item.id)}>+</button>
                   </div>
                   <p>Total: ${item.price * item.quantity}</p>
-                  <button
-                    className="quantity-controls-remove"
-                    onClick={() => removeFromCart(item.id)}
-                  >
+                  <button onClick={() => removeFromCart(item.id)}>
                     Remove
                   </button>
                 </div>

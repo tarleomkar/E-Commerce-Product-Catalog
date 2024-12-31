@@ -19,7 +19,9 @@ const Home = () => {
 
       console.log("Fetching products with query:", queryString); // Debugging query string
 
-      const response = await fetch(`http://localhost:5000/api/products/filter${queryString}`);
+      const response = await fetch(
+        `http://localhost:5000/api/products/filter${queryString}`
+      );
       const data = await response.json();
       setProducts(data);
     } catch (error) {
@@ -33,7 +35,6 @@ const Home = () => {
   }, [category, sortOrder]);
 
   // console.log(products);
-  
 
   // Add product to cart
   const addToCart = (product) => {
@@ -125,9 +126,9 @@ const Home = () => {
           {products.length > 0 ? (
             products.map((product) => (
               <ProductCard
-                key={product.id}
+                key={product._id} // Ensure you're using a unique identifier
                 product={product}
-                addToCart={addToCart} // Passing addToCart function to ProductCard
+                addToCart={addToCart}
               />
             ))
           ) : (

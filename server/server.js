@@ -1,24 +1,27 @@
 const express = require("express");
 const cors = require("cors");
-const mongoose = require("mongoose");
 const productRoutes = require("./routes/products");
 const cartRoutes = require("./routes/cart");
+const connectDB = require("./config/db");
 
 const app = express();
 
 // Middleware
 app.use(express.json());
 app.use(cors());
+app.use(express.json());
+app.use('/public', express.static('public'));
+connectDB();
 
-// Routes
+
+app.get("/", (req, res) => {
+  res.send("Server is running");
+})
+
+// Routes  
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 
-// MongoDB Atlas connection
-mongoose
-  .connect("mongodb://localhost:27017/ecommerce")  // Ensure you are connecting to the right MongoDB instance
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.log("MongoDB connection error:", err));
 
 // Server setup
 const PORT = process.env.PORT || 5000;

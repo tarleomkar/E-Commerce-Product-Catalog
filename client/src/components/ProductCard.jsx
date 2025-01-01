@@ -1,12 +1,21 @@
 import React from "react";
-const ProductCard = ({ product, addToCart }) => {
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../redux/slices/cartSlice";
+import "./ProductCard.css"; // Import the CSS file at the top of your ProductCard component
+
+const ProductCard = ({ product }) => {
+  const productData = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  const handleAddToCart = () => {
+    if (productData) dispatch(addToCart(product)); // Dispatch the product to Redux cart
+  };
+
   return (
     <div className="product-card">
-      <img src={`http://localhost:5000/images/${product.image}`} alt={product.title} />
-      <h3>{product.title}</h3>
-      <p>Price: ${product.price}</p>
+      <img src={product.image} alt={product.title} /> <h3>{product.title}</h3>
+      <p>${product.price}</p>
       <p>Category: {product.category}</p>
-      <button onClick={() => addToCart(product)}>Add to cart</button>
+      <button onClick={handleAddToCart}>Add to Cart</button>
     </div>
   );
 };

@@ -2,91 +2,91 @@
   {
     "title": "Smartphone A1",
     "price": 299,
-    "image": "/product_1.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722091/product_1_nje7kl.jpg",
     "category": "electronics"
   },
   {
     "title": "Running Shoes X",
     "price": 80,
-    "image": "/product_2.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722085/product_2_dddlqq.jpg",
     "category": "shoes"
   },
   {
     "title": "Laptop Pro",
     "price": 999,
-    "image": "/product_3.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722062/product_3_rtskid.jpg",
     "category": "electronics"
   },
   {
     "title": "Casual Shirt",
     "price": 25,
-    "image": "/product_4.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722055/product_4_ioqmhy.webp",
     "category": "clothing"
   },
   {
     "title": "Wireless Earbuds",
     "price": 50,
-    "image": "/product_5.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722068/product_5_at3j7m.jpg",
     "category": "electronics"
   },
   {
     "title": "Sneakers Z2",
     "price": 70,
-    "image": "/product_6.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722100/product_6_whxcoq.jpg",
     "category": "shoes"
   },
   {
     "title": "Winter Jacket",
     "price": 120,
-    "image": "/product_7.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722073/product_7_byuejc.jpg",
     "category": "clothing"
   },
   {
     "title": "Gaming Console",
     "price": 399,
-    "image": "/product_8.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722074/product_8_z15u4c.jpg",
     "category": "electronics"
   },
   {
     "title": "Formal Shoes",
     "price": 95,
-    "image": "/product_9.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722066/product_9_agyt6m.jpg",
     "category": "shoes"
   },
   {
     "title": "Fitness Tracker",
     "price": 45,
-    "image": "/product_10.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722087/product_10_r91vgv.jpg",
     "category": "electronics"
   },
   {
     "title": "Denim Jeans",
     "price": 40,
-    "image": "/product_11.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722087/product_11_pqswkz.jpg",
     "category": "clothing"
   },
   {
     "title": "4K Smart TV",
     "price": 699,
-    "image": "/product_12.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722088/product_12_pkocd3.avif",
     "category": "electronics"
   },
   {
     "title": "Leather Belt",
     "price": 20,
-    "image": "/product_13.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722088/product_13_zcskwr.webp",
     "category": "clothing"
   },
   {
     "title": "Hiking Boots",
     "price": 110,
-    "image": "/product_14.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722087/product_14_gkcljq.avif",
     "category": "shoes"
   },
   {
     "title": "Wireless Keyboard",
     "price": 60,
-    "image": "/product_15.jpg",
+    "image": "https://res.cloudinary.com/draodxztu/image/upload/v1735722088/product_15_tyxauy.jpg",
     "category": "electronics"
   }
 ]

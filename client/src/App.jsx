@@ -1,14 +1,14 @@
-import React from 'react'
-import Home from "./pages/Home";
-import './App.css'
+import React from 'react';
+import ProductList from './components/productList';
+import Cart from './components/Cart';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Product Catalog</h1>
-      <Home />
+    <div>
+      <ProductList />
+      <Cart />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

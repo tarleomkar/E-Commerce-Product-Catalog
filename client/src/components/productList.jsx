@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchProducts } from '../redux/slices/productsSlice';
-import ProductCard from './productCard';
+import ProductCard from './ProductCard';
 import Filter from './FilterSort'  // Import Filter Component
 import './ProductList.css'; // Import the CSS for grid layout
 

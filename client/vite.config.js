@@ -6,9 +6,8 @@ export default defineConfig({
   base: './', // This ensures relative paths for assets
   build: {
     rollupOptions: {
-      external: ['@reduxjs/toolkit'], // Ensure proper externalization
+      // Remove the `external` field for @reduxjs/toolkit
+      // external: ['@reduxjs/toolkit'],
     },
   },
 });
-
-

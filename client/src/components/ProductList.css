@@ -1,7 +1,10 @@
-/* Styles for ProductList container */
 .product-list {
+  flex: 7; /* 70% width of the layout */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between cards */
-  padding: 20px;
+  grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+  gap: 20px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
 }

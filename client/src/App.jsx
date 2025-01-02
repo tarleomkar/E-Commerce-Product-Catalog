@@ -5,8 +5,8 @@ import Cart from './components/Cart';
 function App() {
   return (
     <div>
-      <ProductList />
       <Cart />
+      <ProductList />
     </div>
   );
 }

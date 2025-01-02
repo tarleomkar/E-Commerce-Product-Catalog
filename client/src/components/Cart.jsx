@@ -1,5 +1,7 @@
 import React from 'react';
 import './Cart.css';  // Importing Cart styles
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; // Import shopping cart icon
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart, updateQuantity } from '../redux/slices/cartSlice';
 
@@ -8,7 +10,6 @@ const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
   console.log(cartItems);
-  // console.log(cartItems);
 
   const handleRemove = (id) => {
     dispatch(removeFromCart({ id }));
@@ -29,8 +30,8 @@ const Cart = () => {
   };
 
   return (
-    <div>
-      <h2>Your Cart</h2>
+    <div className='cart-container'>
+      <h1>My Cart <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" /></h1>
       <div className="cart-items">
         {cartItems.length === 0 && <p>Your cart is empty</p>}
         {cartItems.map(item => (
@@ -50,7 +51,8 @@ const Cart = () => {
           </div>
         ))}
       </div>
-      <h3>Total: ${totalAmount}</h3>
+      {/* <h3>Total: ${totalAmount}</h3> */}
+      {cartItems.length > 0 && <h3 className="cart-total">Total: ${totalAmount}</h3>}
     </div>
   );
 };

@@ -3,7 +3,7 @@ import './Cart.css';  // Importing Cart styles
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; // Import shopping cart icon
 import { useDispatch, useSelector } from 'react-redux';
-import { removeFromCart, updateQuantity } from '../redux/slices/cartSlice';
+import { removeFromCart, updateQuantity } from '../redux/slices/cartSlice'; // Actions defined in cartSlice.js to modify the cart state.
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -52,6 +52,7 @@ const Cart = () => {
         ))}
       </div>
       {/* <h3>Total: ${totalAmount}</h3> */}
+      {/* Displays the total amount (totalAmount) only if there are items in the cart. */}
       {cartItems.length > 0 && <h3 className="cart-total">Total: ${totalAmount}</h3>}
     </div>
   );

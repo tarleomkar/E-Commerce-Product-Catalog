@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setFilters, filterProducts } from '../redux/slices/productsSlice';
 import './Filter.css'
+
 const Filter = () => {
   const [category, setCategory] = useState('');
   const [priceRange, setPriceRange] = useState('');
+  
   const dispatch = useDispatch();
 
   const handleApplyFilters = () => {

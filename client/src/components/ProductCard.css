@@ -64,3 +64,31 @@
   color: #ff5722;
   margin-top: 8px;
 }
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%; /* Make the card take full width on smaller screens */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .product-card-container {
+    display: flex;
+    flex-direction: column; /* Stack product cards vertically */
+    align-items: center;
+  }
+}
+
+/* Media Query for Tablets and Small Desktops */
+@media (max-width: 1024px) {
+  .product-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: space-around; /* Space cards evenly */
+  }
+
+  .product-card {
+    width: 45%; /* Two cards per row on tablets */
+    margin: 10px;
+  }
+}

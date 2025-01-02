@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/slices/cartSlice";
-import "./ProductCard.css"; // Import the CSS file at the top of your ProductCard component
+import "./ProductCard.css";
 
 const ProductCard = ({ product }) => {
   const productData = useSelector((state) => state.cart);

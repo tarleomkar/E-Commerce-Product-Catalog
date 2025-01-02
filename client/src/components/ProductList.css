@@ -1,10 +1,38 @@
 .product-list {
-  flex: 7; /* 70% width of the layout */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items in multiple rows */
+  gap: 20px; /* Spacing between items */
   margin: 20px;
   padding: 10px;
   background-color: #f9f9f9;
   border-radius: 8px;
+}
+
+/* Product item inside the flex container */
+.product-card {
+  flex: 1 1 calc(33.333% - 20px); /* 3 items per row, minus the gap */
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Ensure spacing at the bottom */
+}
+
+/* For mobile screens (<=768px), display 1 item per row */
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .product-card {
+    width: 100%; /* Full width for each card */
+  }
+}
+
+/* For tablet screens (<=1024px), display 2 items per row */
+@media (max-width: 1024px) {
+  .product-list {
+    flex-direction: row; /* Keep items horizontal */
+  }
+
+  .product-card {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row */
+  }
 }

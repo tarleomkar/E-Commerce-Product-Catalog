@@ -5,8 +5,6 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 16px;
-  width: 250px;
-  margin: 10px;
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -65,30 +63,34 @@
   margin-top: 8px;
 }
 
+/* Main container to wrap the cards */
+.product-card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: space-between; /* Space cards evenly */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
   .product-card {
-    width: 100%; /* Make the card take full width on smaller screens */
+    width: 100%; /* Full width for cards on small screens */
     margin: 10px 0; /* Adjust margin */
-  }
-
-  .product-card-container {
-    display: flex;
-    flex-direction: column; /* Stack product cards vertically */
-    align-items: center;
   }
 }
 
-/* Media Query for Tablets and Small Desktops */
+/* Media Query for Tablets (<= 1024px) */
 @media (max-width: 1024px) {
-  .product-card-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap */
-    justify-content: space-around; /* Space cards evenly */
-  }
-
   .product-card {
     width: 45%; /* Two cards per row on tablets */
-    margin: 10px;
+    margin: 10px 0; /* Adjust margin */
+  }
+}
+
+/* Media Query for Desktop (>= 1025px) */
+@media (min-width: 1025px) {
+  .product-card {
+    width: 30%; /* Three cards per row on desktops */
   }
 }

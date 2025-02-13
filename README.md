@@ -9,6 +9,7 @@ This is a fully functional e-commerce platform that allows users to browse and m
 Built with React.js for a smooth and interactive user interface.
 Hosted on Netlify for fast and reliable deployment.
 Live Demo: https://ecomproductsscatelogg.netlify.app/
+Vercel: https://e-commerce-product-catalog-m8o7zpdsm-omkar-tarle-s-projects.vercel.app/
 
 ⚙️ Backend:
 API built with Node.js and Express.js to handle requests.
